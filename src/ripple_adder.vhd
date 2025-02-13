@@ -27,7 +27,7 @@ architecture Behavioral of ripple_adder is
         end component full_adder;
     
     -- Declare signals here
-    signal w_carry  : STD_LOGIC_VECTOR(3 downto 0); -- for ripple between adders
+    signal w_carry  : STD_LOGIC_VECTOR(2 downto 0); -- for ripple between adders
 
 begin
 full_adder_0: full_adder
@@ -63,7 +63,7 @@ full_adder_0: full_adder
         B     => B(3),
         Cin   => w_carry(2),
         S     => S(3),
-        Cout  => w_carry(3)
+        Cout  => Cout
     ); 
     
 end Behavioral;
