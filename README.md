@@ -22,3 +22,18 @@ Then it **elaborates** the entity defined by `$TB_ENTITY`
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+# Ripple Adder Simulation
+
+This image shows the waveform output of the ripple carry adder.
+![Ripple Adder Waveform from Simulation](rippleAdder_waveform.png)
+
+# Top Level Entity Sketch
+
+This image is a rough sketch of the `top_basys3` entity.
+![Top Level Entity](top_basys3_sketch.png)
+
+
+## Documentation
+
+C3C Jayden Randolph helped me fix my error when the simulator did not work as expected. Later, we found out that Vivado was case sensitive. I changed 
