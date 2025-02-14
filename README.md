@@ -31,7 +31,7 @@ This image shows the waveform output of the ripple carry adder.
 # Top Level Entity Sketch
 
 This image is a rough sketch of the `top_basys3` entity.
-![Top Level Entity](top_basys3_sketch.png)
+![Top Level Entity](rippleAdder_Sketch.jpg)
 
 
 ## Documentation
